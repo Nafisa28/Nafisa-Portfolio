@@ -591,7 +591,7 @@
         <div class="form-row"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
         <button type="submit" class="form-submit" data-magnet>Send Message</button>
         <div class="form-status" id="formStatus"></div>
-        <p class="form-note">This form sends via Web3Forms — add your free access key in the script section (search "YOUR_WEB3FORMS_ACCESS_KEY") to activate it.</p>
+
       </form>
     </div>
   </section>
@@ -705,7 +705,7 @@ const form = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');
 form.addEventListener('submit', async (e)=>{
   e.preventDefault();
-  const accessKey = "YOUR_WEB3FORMS_ACCESS_KEY";
+  const accessKey = "7bc77a4e-9338-408f-b5f4-51eed5dbfb19";
   if(accessKey === "YOUR_WEB3FORMS_ACCESS_KEY"){
     status.textContent = "Form not yet connected — add a free Web3Forms access key in the script to activate.";
     status.style.color = "#F0B429";
